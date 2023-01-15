@@ -2,10 +2,11 @@
 <html>
 
 <body style="background-color:powderblue;">
-	<h3> Acceleration Calculator </h3>
+	<h3> Travel Time Calculator </h3>
 	<form onsubmit="return false;" method="post">
-		<input placeholder="Distance Traveled" type="text" id="civ" />
-		<input placeholder="Time took" type="text" id="cit" />
+		<input placeholder="Distance from Start to Finish" type="text" id="totalDist" />
+        <input placeholder="Terminal Velocity" type="text" id="termVol" />
+        <input placeholder="Hover for more" title="INPUT: DISTANCE TRAVELED WHILE ACCELERATING; Distance Traveled While Accelerating is the distance traveled while accelerating at terminal velocity." type="text" id="distAccel" />
 		<input type="submit" onclick="calculate();" />
 	</form>
 	<a href="index.html">
@@ -18,10 +19,11 @@
 	      var accelCalc = document.getElementById("accel").value;
 	   alert(termVelCalc + " " + initVelCalc + " " + accelCalc);}*/
 	function calculate() {
-		var civCalc = document.getElementById("civ").value;
-		var citCalc = document.getElementById("cit").value;
-		var answer = civCalc / citCalc
-		alert("Answer: " + answer + " ft/s^2");
+		var totalDistCalc= document.getElementById("totalDist").value;
+		var termVelCalc = document.getElementById("termVol").value;
+        var distAccelCalc = document.getElementById("distAccel").value;
+		var answer = totalDistCalc - distAccelCalc / termVelCalc;
+		alert("Answer: " + answer + " ft/s")
 	}
 	</script>
 	<style>

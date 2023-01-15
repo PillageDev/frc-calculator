@@ -1,29 +1,75 @@
 <!DOCTYPE html>
 <html>
-    <body style="background-color:powderblue;">
-        <h3> Kinematics Calculator </h3>
-        <form onsubmit="return false;" method="post">
-            <input placeholder="Terminal Velocity" type="text" id="termVel" />
-            <input placeholder="Inital Velocity"type="text" id="initVel" />
-            <input placeholder="Acceleration Time" type="text" id="accel" />
-            <input type="submit" onclick="calculate();" />
-            </form>
 
-            
-            <script>
-                //function getInput() {
-                  /*   var termVelCalc = document.getElementById("termVel").value;
-                     var initVelCalc = document.getElementById("initVel").value;
-                        var accelCalc = document.getElementById("accel").value;
-                     alert(termVelCalc + " " + initVelCalc + " " + accelCalc);}*/
-                function calculate() {
-                    var termVelCalc = document.getElementById("termVel").value;
-                    var initVelCalc = document.getElementById("initVel").value;
-                    var accelCalc = document.getElementById("accel").value;
-                    var answer = initVelCalc * accelCalc + 0.5 * accelCalc 
-                    alert("Time: " + time)
-                }
+<body style="background-color:powderblue;">
+	<h3> Kinematics Calculator </h3>
+	<form onsubmit="return false;" method="post">
+		<input placeholder="Inital Velocity" type="text" id="initVel" />
+        <input placeholder="Time" type="text" id="time" />
+        <input placeholder="Acceleration" type="text" id="accel" />
+		<input type="submit" onclick="calculate();" />
+	</form>
+	<a href="index.html">
+		<button>Back to Calculators</button>
+	</a>
+	<script>
+	//function getInput() {
+	/*   var termVelCalc = document.getElementById("termVel").value;
+	   var initVelCalc = document.getElementById("initVel").value;
+	      var accelCalc = document.getElementById("accel").value;
+	   alert(termVelCalc + " " + initVelCalc + " " + accelCalc);}*/
+	function calculate() {
+		var initVelCalc = document.getElementById("initVel").value;
+		var accelCalc = document.getElementById("accel").value;
+        var timeCalc = document.getElementById("time").value;
+		var answer = initVelCalc * timeCalc + 0.5 * accelCalc * timeCalc **2;
+		alert("Answer: " + answer + " ft/s")
+	}
+	</script>
+	<style>
+	button {
+		appearance: button;
+		backface-visibility: hidden;
+		background-color: #405cf5;
+		border-radius: 6px;
+		border-width: 0;
+		box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+		box-sizing: border-box;
+		color: #fff;
+		cursor: pointer;
+		font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+		font-size: 100%;
+		height: 44px;
+		line-height: 1.15;
+		margin: 12px 0 0;
+		outline: none;
+		overflow: hidden;
+		padding: 0 25px;
+		position: relative;
+		text-align: center;
+		text-transform: none;
+		transform: translateZ(0);
+		transition: all .2s, box-shadow .08s ease-in;
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+		width: 100%;
+	}
 
-            </script>
-    </body>
+	button:disabled {
+		cursor: default;
+	}
+
+	button:focus {
+		box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+	}
+
+	button:hover {
+		background-color: #E01E79;
+		border: 2px solid white;
+		font-weight: 500;
+	}
+	</style>
+</body>
+
 </html>
