@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body style="background-color:powderblue;">
+        <h3> Acceleration Calculator </h3>
+        <form onsubmit="return false;" method="post">
+            <input placeholder="Change in Velocity" type="text" id="civ" />
+            <input placeholder="Change in Time"type="text" id="cit" />
+            <input type="submit" onclick="calculate();" />
+            </form>
+
+            
+            <script>
+                //function getInput() {
+                  /*   var termVelCalc = document.getElementById("termVel").value;
+                     var initVelCalc = document.getElementById("initVel").value;
+                        var accelCalc = document.getElementById("accel").value;
+                     alert(termVelCalc + " " + initVelCalc + " " + accelCalc);}*/
+                function calculate() {
+                    var civCalc = document.getElementById("civ").value;
+                    var citCalc = document.getElementById("cit").value;
+                    var answer = civCalc / citCalc
+                    alert("Answer: " + answer);
+                }
+
+            </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body style="background-color:powderblue;">
+        <h3> Kinematics Calculator </h3>
+        <form onsubmit="return false;" method="post">
+            <input placeholder="Terminal Velocity" type="text" id="termVel" />
+            <input placeholder="Inital Velocity"type="text" id="initVel" />
+            <input placeholder="Acceleration Time" type="text" id="accel" />
+            <input type="submit" onclick="calculate();" />
+            </form>
+
+            
+            <script>
+                //function getInput() {
+                  /*   var termVelCalc = document.getElementById("termVel").value;
+                     var initVelCalc = document.getElementById("initVel").value;
+                        var accelCalc = document.getElementById("accel").value;
+                     alert(termVelCalc + " " + initVelCalc + " " + accelCalc);}*/
+                function calculate() {
+                    var termVelCalc = document.getElementById("termVel").value;
+                    var initVelCalc = document.getElementById("initVel").value;
+                    var accelCalc = document.getElementById("accel").value;
+                    var answer = initVelCalc * accelCalc + 0.5 * accelCalc 
+                    alert("Time: " + time)
+                }
+
+            </script>
+    </body>
+</html>
