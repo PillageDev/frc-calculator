@@ -3,12 +3,14 @@
 
 <body style="background-color:powderblue;">
 	<h3> Kinematics Calculator </h3>
+	<div class="distanceBody">
 	<form onsubmit="return false;" method="post">
 		<input placeholder="Inital Velocity" type="text" id="initVel" />
         <input placeholder="Time" type="text" id="time" />
         <input placeholder="Acceleration" type="text" id="accel" />
-		<input type="submit" onclick="calculate();" />
+		<input type="submit" onclick="calculate();" id="distanceSubmit" />
 	</form>
+	</div>	
 	<a href="index.html">
 		<button>Back to Calculators</button>
 	</a>
@@ -69,7 +71,69 @@
 		border: 2px solid white;
 		font-weight: 500;
 	}
+	#initVel{
+		width: 50%;
+		height: 30px;
+		border-radius: 12px;
+		border: 1px solid #ccc;
+		padding: 5px;
+	}
+	#time{
+		width: 50%;
+		height: 30px;
+		border-radius: 12px;
+		border: 1px solid #ccc;
+		padding: 5px;
+	}
+	#accel{
+		width: 50%;
+		height: 30px;
+		border-radius: 12px;
+		border: 1px solid #ccc;
+		padding: 5px;
+	}
+	#distanceSubmit{
+		appearance: button;
+		backface-visibility: hidden;
+		background-color: #405cf5;
+		border-radius: 6px;
+		border-width: 0;
+		box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+		box-sizing: border-box;
+		color: #fff;
+		cursor: pointer;
+		font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+		font-size: 100%;
+		height: 44px;
+		line-height: 1.15;
+		margin: 12px 0 0;
+		outline: none;
+		overflow: hidden;
+		padding: 0 25px;
+		position: relative;
+		text-align: center;
+		text-transform: none;
+		transform: translateZ(0);
+		transition: all .2s, box-shadow .08s ease-in;
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+		width: 50%;
+		
+	}
+	.distanceBody{
+		text-align: center;
+	}
 	</style>
 </body>
+<br>
+	<br>
+	<br>
+	<hr>
+	<br>
+	<h3 id="calcFooter">Spike 293</h3>
+	<div id="footer">
+		<a href="tools.html" id="linkToTools">Other Tools</a>
+		</div>
 
 </html>
