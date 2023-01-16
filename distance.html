@@ -2,7 +2,7 @@
 <html>
 
 <body style="background-color:powderblue;">
-	<h3> Kinematics Calculator </h3>
+	<h1> Travel Time (Point A to Point B) </h1>
 	<div class="distanceBody">
 	<form onsubmit="return false;" method="post">
 		<input placeholder="Inital Velocity" type="text" id="initVel" />
@@ -29,6 +29,12 @@
 	}
 	</script>
 	<style>
+		 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,500');
+		h1 {
+		text-align: center;
+		font-family: 'Quicksand', sans-serif;
+		font-size: 30px;
+		}
 	button {
 		appearance: button;
 		backface-visibility: hidden;
@@ -92,7 +98,7 @@
 		border: 1px solid #ccc;
 		padding: 5px;
 	}
-	#distanceSubmit{
+	#distanceSubmit {
 		appearance: button;
 		backface-visibility: hidden;
 		background-color: #405cf5;
@@ -119,21 +125,27 @@
 		-webkit-user-select: none;
 		touch-action: manipulation;
 		width: 50%;
-		
 	}
+
+	#distanceSubmit:disabled {
+		cursor: default;
+	}
+
+	#distanceSubmit:focus {
+		box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+	}
+
+	#distanceSubmit:hover {
+		background-color: #E01E79;
+		border: 2px solid white;
+		font-weight: 500;
+	}
+	
 	.distanceBody{
 		text-align: center;
 	}
 	</style>
 </body>
-<br>
-	<br>
-	<br>
-	<hr>
-	<br>
-	<h3 id="calcFooter">Spike 293</h3>
-	<div id="footer">
-		<a href="tools.html" id="linkToTools">Other Tools</a>
-		</div>
 
 </html>
+
