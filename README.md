@@ -1,12 +1,12 @@
-### FRC Calculator 
+# FRC Calculator 
 
 ## Not currently intended for accurate measurements 
 
-# Please open an issue ticket if you find anything wrong!
+### Please open an issue ticket if you find anything wrong!
 
-# To contribute please fork and make a pull request. 
+### To contribute please fork and make a pull request. 
 
-# How to use:
+### How to use:
 
 1. Head over to the (releases)[https://github.com/PillageDev/frc-calculator/releases] page
 
