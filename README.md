@@ -8,7 +8,7 @@
 
 ### How to use:
 
-1. Head over to the (releases)[https://github.com/PillageDev/frc-calculator/releases] page
+1. Head over to the [releases](https://github.com/PillageDev/frc-calculator/releases) page
 
 2. Download the latest release
 
