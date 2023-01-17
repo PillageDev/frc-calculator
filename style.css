@@ -5,5 +5,255 @@
     text-align: center;
 }
 
+/*Distance*/
 
+#initVel{
+    width: 50%;
+    height: 30px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+#time{
+    width: 50%;
+    height: 30px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+#accel{
+    width: 50%;
+    height: 30px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+#distanceSubmit {
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #405cf5;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 100%;
+    height: 44px;
+    line-height: 1.15;
+    margin: 12px 0 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s, box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 50%;
+}
 
+#distanceSubmit:disabled {
+    cursor: default;
+}
+
+#distanceSubmit:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+#distanceSubmit:hover {
+    background-color: #E01E79;
+    border: 2px solid white;
+    font-weight: 500;
+}
+
+.distanceBody{
+    text-align: center;
+}
+
+/*Robot Specs*/
+
+#backFrom293 {
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #405cf5;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 100%;
+    height: 44px;
+    line-height: 1.15;
+    margin: 12px 0 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s, box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+}
+
+#backFrom293:disabled {
+    cursor: default;
+}
+
+#backFrom293:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+#backFrom293:hover {
+    background-color: #E01E79;
+    border: 2px solid white;
+    font-weight: 500;
+}
+
+.robotInfo {
+    text-align: center;
+}
+
+/*Travel Time*/
+
+.travelTimeBody {
+    text-align: center;
+}
+#totalDist {
+    width: 50%;
+    height: 30px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+#termVel {
+    width: 50%;
+    height: 30px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+#distAccel {
+    width: 50%;
+    height: 30px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+#travelSubmit {
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #405cf5;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 100%;
+    height: 44px;
+    line-height: 1.15;
+    margin: 12px 0 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s, box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 50%;
+}
+
+#travelSubmit:disabled {
+    cursor: default;
+}
+
+#travelSubmit:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+#travelSubmit:hover {
+    background-color: #E01E79;
+    border: 2px solid white;
+    font-weight: 500;
+}
+
+/*Acceleration*/
+
+#cit{
+    width: 50%;
+    height: 30px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+#civ{
+    width: 50%;
+    height: 30px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.accelerationBody{
+    text-align: center;
+}
+
+#accelSubmit {
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #405cf5;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 100%;
+    height: 44px;
+    line-height: 1.15;
+    margin: 12px 0 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s, box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 50%;
+}
+
+#accelSubmit:disabled {
+    cursor: default;
+}
+
+#accelSubmit:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+#accelSubmit:hover {
+    background-color: #E01E79;
+    border: 2px solid white;
+    font-weight: 500;
+}
